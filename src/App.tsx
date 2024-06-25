@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import { FirstTask } from './FirstTask/FirstTask';
+import { SecondTask } from './SecondTask/SecondTask';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <h1 className={styles.header}>Задание для фронтенд разработчика</h1>
+      <h2>Задание 1. HTTP-запросы</h2>
+      <FirstTask/>
+      <h2>Задание 2. Исправить ошибку</h2>
+      <SecondTask/>
     </div>
   );
 }
